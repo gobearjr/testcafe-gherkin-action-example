@@ -1,0 +1,24 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "web automation testing with testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test-cucumber": "node_modules/.bin/gherkin-testcafe chrome page-objects/step_definitions/*.js page-objects/features/*.feature",
+    "test-headless": "node_modules/.bin/gherkin-testcafe chrome:headless page-objects/step_definitions/*.js page-objects/features/*.feature"
+  },
+  "keywords": [
+    "testcafe",
+    "web",
+    "automation"
+  ],
+  "author": "Fatur",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^5.1.0",
+    "eslint": "^8.56.0",
+    "gherkin-testcafe": "^7.2.0",
+    "npm": "^10.3.0",
+    "testcafe": "^3.5.0"
+  }
+}
