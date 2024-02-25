@@ -4,7 +4,7 @@
   "description": "web automation testing with testcafe",
   "main": "index.js",
   "scripts": {
-    "test-cucumber": "node_modules/.bin/gherkin-testcafe chrome page-objects/step_definitions/*.js page-objects/features/*.feature",
+    "test-cucumber": "node_modules/.bin/gherkin-testcafe chrome page-objects/step_definitions/*.js page-objects/features/*.feature takeOnFails=true --disable-page-caching --skip-js-errors --reporter html:integration.html",
     "test-headless": "node_modules/.bin/gherkin-testcafe chrome:headless page-objects/step_definitions/*.js page-objects/features/*.feature"
   },
   "keywords": [
@@ -19,6 +19,7 @@
     "eslint": "^8.56.0",
     "gherkin-testcafe": "^7.2.0",
     "npm": "^10.3.0",
-    "testcafe": "^3.5.0"
+    "testcafe": "^3.5.0",
+    "testcafe-reporter-html": "^1.4.6"
   }
 }
